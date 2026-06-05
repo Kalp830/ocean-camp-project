@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Checkout - OceanCamp</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="bg-[#f6f8fb]">
+
+<!-- HEADER -->
+
+<header class="bg-white border-b">
+<div class="container-custom">
+
+<div class="header-row">
+
+<a href="#" class="logo">
+<span style="color: #102A43;">Ocean</span><span>Camp</span>
+</a>
+
+<nav class="desktop-nav">
+<a href="index.html">Home</a>
+<a href="result.html">Results</a>
+<a href="checkout.html" class="active">Book Now</a>
+<div class="nav-divider"></div>
+<a href="#">Sign In</a>
+
+<a href="#" class="signup-btn">
+Sign Up
+</a>
+</nav>
+</div>
+</div>
+</header>
+
+<!-- PROGRESS -->
+
+<section class="container-custom pt-10">
+
+<div class="checkout-progress">
+
+<div class="step">
+<div class="circle bg-primary is-done"><i class="fa fa-check"></i></div>
+<div class="text-xs font-semibold text-slate-700 pt-2">Passengers</div>
+</div>
+
+<div class="line"></div>
+
+<div class="step active">
+<div class="circle">2</div>
+<div class="text-xs font-semibold text-slate-700 pt-2">Payment</div>
+</div>
+
+<div class="line"></div>
+<div class="step">
+<div class="circle">3</div>
+<div class="text-xs font-semibold text-slate-700 pt-2">Confirm</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTENT -->
+
+<section class="container-custom py-4">
+<h1 class="text-2xl font-bold text-slate-900 mb-6">
+Payment Details
+</h1>
+<div class="flex items-center gap-2 text-sm text-green-700 bg-green-50 border border-green-200 rounded-lg px-4 py-3 mb-6" role="note">
+    <i class="fa-solid fa-shield-halved" style="flex-shrink:0;" aria-hidden="true"></i>
+    <span>Your payment is secured by 256-bit SSL encryption. We never store your card details.</span>
+  </div>
+  
+
+<div class="checkout-layout">
+<!-- LEFT -->
+
+<div>
+
+<!-- PASSENGER 1 -->
+<div class="card-box">
+<h2 class="font-semibold text-slate-800 mb-4">Credit or Debit Card</h2>
+<div class="flex gap-3 mb-5 items-center" aria-label="Accepted card types">
+    <i class="fa-brands fa-cc-visa" style="font-size:2rem;color:#1a1f71;" aria-label="Visa"></i>
+    <i class="fa-brands fa-cc-mastercard" style="font-size:2rem;color:#eb001b;" aria-label="Mastercard"></i>
+    <i class="fa-brands fa-cc-amex" style="font-size:2rem;color:#007bc1;" aria-label="American Express"></i>
+    <i class="fa-brands fa-cc-discover" style="font-size:2rem;color:#e65c1a;" aria-label="Discover"></i>
+  </div>
+<div class="form-grid">
+<div class="col-span-full">
+<label>Cardholder Name <span style="color: red;">*</span></label>
+<input class="form-control"
+placeholder="Name as on card">
+</div>
+
+<div class="col-span-full">
+<label>Card Number <span style="color: red;">*</span></label>
+<input class="form-control"
+placeholder="1235 4562 8656 7854">
+</div>
+
+
+
+<div>
+<label>Expiry Date <span style="color: red;">*</span></label>
+<input class="form-control"
+placeholder="MM/YY">
+</div>
+
+<div>
+<label>CVV <span style="color: red;">*</span> <i class="fa fa-circle-info"></i></label>
+<input class="form-control"
+placeholder="456">
+</div>
+
+
+</div>
+<label class="terms-label d-flex justify-items-center py-3">
+    <input
+    type="checkbox"
+    class="checkbox-theme">
+    <span style="font-weight:normal;">Billing address same as passenger details</span>  
+    </label>
+</div>
+
+
+<div class="action-row">
+<button class="btn-back">
+<i class="fa-solid fa-chevron-left"></i><a href="checkout.html"> Back</a></button>
+<button class="btn-primary" onclick="window.location.href='confirm.html';"> Review Booking <i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+</div>
+
+<!-- SIDEBAR -->
+
+<aside>
+
+<div class="booking-card">
+
+<div class="booking-header">
+
+<h3>Your Booking</h3>
+
+<p>Caribbean Cruise</p>
+
+</div>
+<div class="relative rounded-lg overflow-hidden mb-3">
+<img
+src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13"
+class="booking-image">
+<div class="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent rounded-lg flex flex-col justify-end p-3">
+<h4 class="text-white text-sm font-bold pl-3">Symphony of the Seas</h4>
+<p class="text-white/70 text-xs pl-3">Royal Caribbean</p>
+</div>
+</div>
+
+<ul class="booking-info">
+
+<li>
+<i class="fa-solid fa-location-dot"></i>
+Miami → Caribbean
+</li>
+
+<li>
+<i class="fa-solid fa-calendar"></i>
+Jun 15 – Jun 22, 2026
+</li>
+
+<li>
+<i class="fa-solid fa-users"></i>
+2 Adults · Balcony Cabin
+</li>
+
+</ul>
+
+<div class="price-breakdown">
+
+<div>
+<span>Cabin (2 × $899)</span>
+<strong>$1,798</strong>
+</div>
+
+<div>
+<span>Port fees & taxes</span>
+<strong>$124</strong>
+</div>
+
+</div>
+
+<div class="booking-total">
+
+<span class="text-slate-700">Total</span>
+
+<strong class="text-xl text-[#102a43]">$1,922</strong>
+
+</div>
+
+<ul class="booking-benefits">
+
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Free cancellation
+</li>
+
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Best price guarantee
+</li>
+
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Secure SSL payment
+</li>
+
+</ul>
+
+</div>
+
+<div class="help-card">
+
+<h4>Need help booking?</h4>
+
+<p>Our agents are available 24/7</p>
+
+<button>
+
+<i class="fa-solid fa-phone"></i>
+
+1-800-123-4567
+
+</button>
+
+</div>
+
+</aside>
+
+</div>
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+
+$(function(){
+
+$('.accordion-trigger').click(function(){
+
+$(this)
+.next('.accordion-content')
+.slideToggle(250);
+
+$(this)
+.find('i')
+.toggleClass('rotate-180');
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

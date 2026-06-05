@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>OceanCamp - Luxury Cruise Booking</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-[#f8f8f8]">
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+
+        <nav class="max-w-7xl mx-auto px-4 md:px-0 py-6">
+
+            <div class="flex items-center justify-between">
+
+                <a href="index.html" class="logo">
+                    Ocean<span>Camp</span>
+                </a>
+
+                <button
+                    id="mobileMenuBtn"
+                    aria-label="Open Menu"
+                    class="lg:hidden text-white text-2xl"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <ul class="nav-menu hidden lg:flex items-center gap-10">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="result.html">Results</a></li>
+                    <li><a href="checkout.html">Book Now</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li>
+                        <a href="#" class="btn-signup">
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden mobile-menu">
+                <a href="#">Home</a>
+                <a href="#">Results</a>
+                <a href="#">Book Now</a>
+                <a href="#">Sign In</a>
+                <a href="#">Sign Up</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero-section">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container-custom relative z-20">
+
+            <div class="hero-content">
+
+                <p class="hero-topline">
+                    YOUR WORLD, YOUR WAY.
+                </p>
+                <h1>
+                    Find Your Perfect Voyage
+                </h1>
+
+                <p class="hero-description">
+                    Discover thousands of cruises to the world's most breathtaking
+                    ocean destinations.
+                </p>
+            </div>
+
+            <!-- Search Form -->
+
+            <div class="search-card">
+                <form aria-label="Cruise Search Form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+                        <div>
+                            <label for="port" class="field-label">
+                                Departure Port
+                            </label>
+
+                            <select
+                                id="port"
+                                aria-label="Departure Port"
+                                class="form-control"
+                            >
+                                <option>Select port</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="destination" class="field-label">
+                                Destination
+                            </label>
+
+                            <select
+                                id="destination"
+                                aria-label="Destination"
+                                class="form-control"
+                            >
+                                <option>Any destination</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="cabin" class="field-label">
+                                Cabin Type
+                            </label>
+
+                            <select
+                                id="cabin"
+                                aria-label="Cabin Type"
+                                class="form-control"
+                            >
+                                <option>Any Cabin</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="departureDate" class="field-label">
+                                Departure Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="departureDate"
+                                class="form-control"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="returnDate" class="field-label">
+                                Return Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="returnDate"
+                                class="form-control"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="guests" class="field-label">
+                                Guests
+                            </label>
+
+                            <select
+                                id="guests"
+                                class="form-control"
+                            >
+                                <option>2 Adults, 0 Children</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="search-footer">
+                        <p>
+                            <i class="fa-solid fa-circle-info"></i>
+                            Prices shown are per person, based on double occupancy
+                        </p>
+
+                        <button type="submit" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Search Cruises
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- Slider Dots -->
+
+            <div class="slider-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+        <div class="hero-wave"></div>
+    </section>
+
+    <!-- =========================
+         DESTINATIONS
+    ========================== -->
+
+    <section class="destinations-section">
+
+        <div class="container-custom">
+
+            <div class="section-header">
+
+                <h2>Popular Destinations</h2>
+
+                <p>
+                    From tropical Caribbean islands to the majestic Norwegian
+                    fjords.
+                </p>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+                <!-- Card -->
+
+                <article class="destination-card">
+
+                    <div class="card-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                            alt="Caribbean Islands"
+                        >
+
+                        <span class="price-tag">
+                            From $499/pp
+                        </span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Caribbean Islands</h3>
+
+                        <p>
+                            7–14 night itineraries from Miami &
+                            Fort Lauderdale
+                        </p>
+
+                        <button>
+                            Explore Deals
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="destination-card">
+
+                    <div class="card-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1515238152791-8216bfdf89a7"
+                            alt="Norwegian Fjords"
+                        >
+
+                        <span class="price-tag">
+                            From $549/pp
+                        </span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Norwegian Fjords</h3>
+                        <p>
+                            10–14 night sailings from Southampton &
+                            Copenhagen
+                        </p>
+
+                        <button>
+                            Explore Deals
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="destination-card">
+
+                    <div class="card-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
+                            alt="Mediterranean"
+                        >
+
+                        <span class="price-tag">
+                            From $649/pp
+                        </span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Mediterranean</h3>
+
+                        <p>
+                            7–21 night voyages from Barcelona &
+                            Rome
+                        </p>
+
+                        <button>
+                            Explore Deals
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="text-center mt-14">
+                <a href="result.html" class="view-btn">
+                    View All Destinations
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   
+
+</body>
+</html>

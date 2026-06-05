@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+/>
+
+<title>OceanCamp - Cruise Results</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="results-page">
+
+<!-- =======================
+HEADER
+======================= -->
+
+<header class="bg-white border-b">
+
+<div class="container-custom">
+
+<div class="header-row">
+
+<a href="index.html" class="logo">
+<span style="color: #102A43;">Ocean</span><span>Camp</span>
+</a>
+
+<div class="header-search">
+<input
+type="text"
+placeholder="Search cruises, destinations..."
+aria-label="Search cruises"
+/>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+</div>
+
+<nav class="desktop-nav">
+<a href="index.html">Home</a>
+<a href="result.html" class="active">Results</a>
+<a href="checkout.html">Book Now</a>
+
+<div class="nav-divider"></div>
+
+<a href="#">Sign In</a>
+
+<a href="#" class="signup-btn">
+Sign Up
+</a>
+</nav>
+
+</div>
+
+</div>
+</header>
+
+<!-- =======================
+PAGE HEADER
+======================= -->
+
+<section class="page-header">
+
+<div class="container-custom">
+
+<div class="breadcrumb">
+<a href="#">Home</a>
+<span>/</span>
+<span>Search Results</span>
+</div>
+
+<h1 class="text-xl font-bold text-slate-900">Caribbean Cruise</h1>
+<p class="text-sm text-slate-500">
+Miami → Caribbean · Jun 15, 2026 · 2 Adults · Balcony cabin
+</p>
+
+</div>
+
+</section>
+
+<!-- =======================
+CONTENT
+======================= -->
+
+<section class="results-section">
+<div class="container-custom">
+<div class="results-layout">
+
+<!-- FILTERS -->
+
+<aside class="filter-sidebar">
+
+<div class="filter-top">
+<h3>Filters</h3>
+<a href="#">Clear All</a>
+</div>
+
+<div class="filter-group">
+
+<h4>Price per Person</h4>
+
+<div class="price-boxes">
+<div>
+<span>MIN</span>
+<strong>$200</strong>
+</div>
+
+<div>
+<span>MAX</span>
+<strong>$3,000</strong>
+</div>
+</div>
+
+<input class="rage-bar" type="range" min="200" max="3000" value="1200">
+
+<div class="price-labels">
+<span>$200</span>
+<span>$3,000</span>
+</div>
+
+</div>
+
+<div class="filter-group">
+<h4>Duration</h4>
+<label><input type="checkbox"> 1–4 Nights</label>
+<label><input type="checkbox"> 5–7 Nights</label>
+<label><input checked type="checkbox"> 8–14 Nights</label>
+</div>
+
+<div class="filter-group">
+<h4>Cruise Line</h4>
+
+<label><input checked type="checkbox"> Royal Caribbean</label>
+<label><input checked type="checkbox"> Carnival Cruise</label>
+<label><input type="checkbox"> Norwegian Cruise</label>
+<label><input type="checkbox"> Celebrity Cruises</label>
+</div>
+
+<div class="filter-group">
+<h4>Cabin Type</h4>
+
+<label><input type="checkbox"> Interior</label>
+<label><input type="checkbox"> Ocean View</label>
+<label><input checked type="checkbox"> Balcony</label>
+</div>
+
+<div class="filter-group">
+<h4>Amenities Included</h4>
+
+<label><input type="checkbox"> All-Inclusive Meals</label>
+<label><input type="checkbox"> Drinks Package</label>
+<label><input type="checkbox"> Wi-Fi Included</label>
+</div>
+
+<button class="apply-btn">
+Apply Filters
+</button>
+
+</aside>
+
+<!-- MAIN -->
+
+<div class="results-main">
+<div class="filter-tags">
+<span class="tag">8–14 Nights <i class="fa-solid fa-xmark"></i></span>
+<span class="tag">Balcony <i class="fa-solid fa-xmark"></i></span>
+<span class="tag">Royal Caribbean <i class="fa-solid fa-xmark"></i></span>
+<span class="tag">Carnival Cruise <i class="fa-solid fa-xmark"></i></span>
+</div>
+
+<div class="results-toolbar">
+
+<p>Showing <strong>9</strong> results</p>
+
+<div class="toolbar-actions">
+<select>
+<option>Recommended</option>
+<option>Price Low to High</option>
+<option>Price High to Low</option>
+</select>
+
+<div class="view-switcher">
+<button class="active">
+<i class="fa-solid fa-grip"></i>
+</button>
+
+<button>
+<i class="fa-solid fa-list"></i>
+</button>
+</div>
+</div>
+</div>
+
+
+<div class="cruise-grid">
+<div class="cruise-card">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13">
+
+<span class="badge">Best Seller</span>
+
+<button class="wishlist">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="nights">7 Nights</div>
+</div>
+<div class="card-body">
+<h3>Symphony of the Seas</h3>
+<div class="sub-title">Royal Caribbean</div>
+<p class="route">
+Miami → Cozumel → Nassau → Miami
+</p>
+<div class="rating">
+★★★★★ <span>(4,821)</span>
+</div>
+
+<div class="amenities">
+<span>All-Inc Meals</span>
+<span>Wi-Fi</span>
+</div>
+
+<div class="card-footer">
+
+<div class="price">
+<small>from</small>
+<strong>$899</strong>
+<span>/person</span><br/>
+<span>Departs: Jun 15, 2026</span>
+</div>
+
+<a href="checkout.html">Select</a>
+</div>
+</div>
+</div>
+
+<!-- Duplicate cards -->
+
+<div class="cruise-card">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad">
+<span class="badge">Great Value</span>
+<button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+<div class="nights">8 Nights</div>
+</div>
+
+<div class="card-body">
+<h3>Carnival Celebration</h3>
+<div class="sub-title">Carnival Cruise</div>
+<p class="route">Miami → Grand Cayman → Belize</p>
+<div class="rating">★★★★★ <span>(3,102)</span></div>
+<div class="amenities"><span>Drinks</span></div>
+
+<div class="card-footer">
+<div class="price">
+<small>from</small>
+<strong>$749</strong>
+<span>/person</span><br/>
+<span>Departs: Jun 15, 2026</span>
+</div>
+<a href="checkout.html">Select</a>
+</div>
+</div>
+</div>
+
+<div class="cruise-card">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<span class="badge">Luxury Pick</span>
+<button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+<div class="nights">10 Nights</div>
+</div>
+
+<div class="card-body">
+<h3>Wonder of the Seas</h3>
+<div class="sub-title">Royal Caribbean</div>
+<p class="route">Port Canaveral → Nassau</p>
+
+<div class="rating">★★★★★ <span>(5,640)</span></div>
+
+<div class="amenities">
+<span>Meals</span>
+<span>Drinks</span>
+<span>Wi-Fi</span>
+</div>
+
+<div class="card-footer">
+<div class="price">
+<small>from</small>
+<strong>$1,299</strong>
+<span>/person</span><br/>
+<span>Departs: Jun 15, 2026</span>
+</div>
+<a href="checkout.html">Select</a>
+</div>
+</div>
+</div>
+
+<!-- second row -->
+
+<div class="cruise-card">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1548574505-5e239809ee19">
+<div class="nights">7 Nights</div>
+</div>
+
+<div class="card-body">
+<h3>MSC Seashore</h3>
+<div class="sub-title">Celebrity Cruises</div>
+<p class="route">Miami → Nassau → Ocean Cay</p>
+
+<div class="rating">★★★★☆ <span>(2,198)</span></div>
+
+<div class="amenities">
+<span>All-Inc Meals</span>
+</div>
+
+<div class="card-footer">
+<div class="price">
+<small>from</small>
+<strong>$649</strong>
+<span>/person</span><br/>
+<span>Departs: Jun 15, 2026</span>
+</div>
+<a href="checkout.html">Select</a>
+</div>
+</div>
+</div>
+
+<div class="cruise-card">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+<span class="badge">Staff Pick</span>
+<div class="nights">9 Nights</div>
+</div>
+
+<div class="card-body">
+<h3>Norwegian Encore</h3>
+<div class="sub-title">Norwegian Cruise</div>
+
+<p class="route">Miami → Costa Maya → Roatan</p>
+
+<div class="rating">★★★★☆ <span>(3,876)</span></div>
+
+<div class="amenities">
+<span>Drinks</span>
+<span>Wi-Fi</span>
+</div>
+
+<div class="card-footer">
+<div class="price">
+<small>from</small>
+<strong>$829</strong>
+<span>/person</span><br/>
+<span>Departs: Jun 15, 2026</span>
+</div>
+<a href="checkout.html">Select</a>
+</div>
+</div>
+</div>
+
+<div class="cruise-card">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+<span class="badge">Premium</span>
+<button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+<div class="nights">10 Nights</div>
+</div>
+
+<div class="card-body">
+<h3>Celebrity Equinox</h3>
+
+<div class="sub-title">Celebrity Cruises</div>
+
+<p class="route">
+Fort Lauderdale → Aruba → Curaçao
+</p>
+
+<div class="rating">
+★★★★★ <span>(4,210)</span>
+</div>
+
+<div class="amenities">
+<span>Meals</span>
+<span>Drinks</span>
+</div>
+
+<div class="card-footer">
+<div class="price">
+<small>from</small>
+<strong>$1,149</strong>
+<span>/person</span><br/>
+<span>Departs: Jun 15, 2026</span>
+</div>
+<a href="checkout.html">Select</a>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- PAGINATION -->
+
+<div class="pagination">
+
+<button>
+<i class="fa-solid fa-angle-left"></i>
+</button>
+
+<button class="active">1</button>
+<button>2</button>
+<button>3</button>
+<span>...</span>
+<button>8</button>
+
+<button>
+<i class="fa-solid fa-angle-right"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(function(){
+
+$('.wishlist').click(function(){
+$(this).toggleClass('active');
+$(this).find('i')
+.toggleClass('fa-regular fa-solid');
+});
+
+$('.tag i').click(function(){
+$(this).parent().fadeOut();
+});
+
+});
+</script>
+
+</body>
+</html>

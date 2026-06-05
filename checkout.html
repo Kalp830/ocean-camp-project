@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Checkout - OceanCamp</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="bg-[#f6f8fb]">
+
+<!-- HEADER -->
+
+<header class="bg-white border-b">
+<div class="container-custom">
+
+<div class="header-row">
+
+<a href="#" class="logo">
+<span style="color: #102A43;">Ocean</span><span>Camp</span>
+</a>
+
+<nav class="desktop-nav">
+<a href="index.html">Home</a>
+<a href="result.html">Results</a>
+<a href="checkout.html" class="active">Book Now</a>
+<div class="nav-divider"></div>
+<a href="#">Sign In</a>
+
+<a href="#" class="signup-btn">
+Sign Up
+</a>
+</nav>
+</div>
+</div>
+</header>
+
+<!-- PROGRESS -->
+
+<section class="container-custom pt-10">
+
+<div class="checkout-progress">
+
+<div class="step active">
+<div class="circle">1</div>
+<div class="text-xs font-semibold text-slate-700 pt-2">Passengers</div>
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+<div class="circle">2</div>
+<div class="text-xs font-semibold text-slate-700 pt-2">Payment</div>
+</div>
+
+<div class="line"></div>
+<div class="step">
+<div class="circle">3</div>
+<div class="text-xs font-semibold text-slate-700 pt-2">Confirm</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTENT -->
+
+<section class="container-custom py-4">
+<h1 class="text-2xl font-bold text-slate-900 mb-6">
+Passenger Details
+</h1>
+
+<div class="checkout-layout">
+<!-- LEFT -->
+
+<div>
+
+<!-- PASSENGER 1 -->
+<div class="card-box">
+<div class="section-header-row">
+<div class="section-title">
+<span class="number-badge">1</span>
+<h3>Lead Passenger</h3>
+
+<span class="primary-badge">
+Primary
+</span>
+
+</div>
+
+</div>
+
+<div class="form-grid">
+
+<div>
+<label>Title</label>
+<select class="form-control">
+<option>Select</option>
+</select>
+</div>
+
+<div>
+<label>First Name <span style="color: red;">*</span></label>
+<input class="form-control"
+placeholder="As shown on passport">
+</div>
+
+<div>
+<label>Last Name <span style="color: red;">*</span></label>
+<input class="form-control"
+placeholder="As shown on passport">
+</div>
+
+<div>
+<label>Date of Birth <span style="color: red;">*</span></label>
+<input type="date"
+class="form-control">
+</div>
+
+<div>
+<label>Nationality <span style="color: red;">*</span></label>
+<select class="form-control">
+<option>Select country</option>
+</select>
+</div>
+
+<div>
+<label>Passport Number <span style="color: red;">*</span></label>
+<input class="form-control"
+placeholder="e.g. A12345678">
+</div>
+
+<div>
+<label>Passport Expiry <span style="color: red;">*</span></label>
+<input type="date"
+class="form-control">
+</div>
+
+<div>
+<label>Email Address <span style="color: red;">*</span></label>
+<input class="form-control"
+placeholder="your@email.com">
+</div>
+
+<div>
+<label>Phone Number <span style="color: red;">*</span></label>
+<input class="form-control"
+placeholder="+1 (555) 000-0000">
+</div>
+
+<div class="col-span-full">
+<label>Special Requirements</label>
+
+<textarea
+class="form-control textarea"
+placeholder="Dietary needs, mobility assistance, medical equipment, etc."></textarea>
+</div>
+</div>
+</div>
+
+<!-- PASSENGER 2 -->
+
+<div class="accordion-box mt-6">
+<button class="accordion-trigger">
+<div class="flex items-center gap-3">
+<span class="accordion-number">
+2
+</span>
+
+Passenger 2
+
+</div>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="pt-6">
+Passenger 2 form fields...
+</div>
+
+</div>
+
+</div>
+
+<!-- EMERGENCY -->
+
+<div class="card-box mt-6">
+<h3 class="section-heading">
+Emergency Contact
+</h3>
+<div class="form-grid">
+<div>
+<label>Full Name <span style="color: red;">*</span></label>
+<input class="form-control">
+</div>
+
+<div>
+<label>Relationship</label>
+<select class="form-control">
+<option>Select...</option>
+</select>
+</div>
+
+<div>
+<label>Phone <span style="color: red;">*</span></label>
+<input class="form-control">
+</div>
+
+<div>
+<label>Email</label>
+<input class="form-control">
+</div>
+
+</div>
+
+</div>
+
+<!-- TERMS -->
+
+<div class="terms-box">
+
+<label class="terms-label">
+
+<input
+type="checkbox"
+class="checkbox-theme">
+
+<span>
+I confirm all passenger details are accurate as they
+appear on government-issued identification.
+
+I agree to the
+<a href="#">Terms & Conditions</a>
+and
+<a href="#">Privacy Policy</a>.
+</span>
+
+</label>
+
+</div>
+
+<!-- ACTIONS -->
+
+<div class="action-row">
+<button class="btn-back">
+<i class="fa-solid fa-chevron-left"></i><a href="result.html"> Back</a></button>
+<button onclick="window.location.href='payment.html';" class="btn-primary">
+Continue to Payment
+<i class="fa-solid fa-chevron-right"></i>
+
+</button>
+
+</div>
+
+</div>
+
+<!-- SIDEBAR -->
+
+<aside>
+
+<div class="booking-card">
+
+<div class="booking-header">
+
+<h3>Your Booking</h3>
+
+<p>Caribbean Cruise</p>
+
+</div>
+
+<div class="relative rounded-lg overflow-hidden mb-3">
+<img
+src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13"
+class="booking-image">
+<div class="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent rounded-lg flex flex-col justify-end p-3">
+<h4 class="text-white text-sm font-bold pl-3">Symphony of the Seas</h4>
+<p class="text-white/70 text-xs pl-3">Royal Caribbean</p>
+</div>
+</div>
+
+<ul class="booking-info">
+
+<li>
+<i class="fa-solid fa-location-dot"></i>
+Miami → Caribbean
+</li>
+
+<li>
+<i class="fa-solid fa-calendar"></i>
+Jun 15 – Jun 22, 2026
+</li>
+
+<li>
+<i class="fa-solid fa-users"></i>
+2 Adults · Balcony Cabin
+</li>
+
+</ul>
+
+<div class="price-breakdown">
+
+<div>
+<span>Cabin (2 × $899)</span>
+<strong>$1,798</strong>
+</div>
+
+<div>
+<span>Port fees & taxes</span>
+<strong>$124</strong>
+</div>
+
+</div>
+
+<div class="booking-total">
+
+<span>Total</span>
+
+<strong>$1,922</strong>
+
+</div>
+
+<ul class="booking-benefits">
+
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Free cancellation
+</li>
+
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Best price guarantee
+</li>
+
+<li>
+<i class="fa-solid fa-circle-check"></i>
+Secure SSL payment
+</li>
+
+</ul>
+
+</div>
+
+<div class="help-card">
+
+<h4>Need help booking?</h4>
+
+<p>Our agents are available 24/7</p>
+
+<button>
+
+<i class="fa-solid fa-phone"></i>
+
+1-800-123-4567
+
+</button>
+
+</div>
+
+</aside>
+
+</div>
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+
+$(function(){
+
+$('.accordion-trigger').click(function(){
+
+$(this)
+.next('.accordion-content')
+.slideToggle(250);
+
+$(this)
+.find('i')
+.toggleClass('rotate-180');
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
